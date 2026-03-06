@@ -1,0 +1,4 @@
+wwwroot\imagens\0a9c7b6a-2a53-4ea6-ae5e-d624849b1100.jpg
+wwwroot\imagens\893a694d-09b6-46cf-b4a8-f2c65f5c8a81.jpg
+wwwroot\imagens\09a4b59c-5583-42cf-87c3-b38206b13afc.htm
+C:\Users\44840646856\Desktop\Projeto Filme\FilmesMoura1.WebAPI\wwwroot\imagens\09a4b59c-5583-42cf-87c3-b38206b13afc.htm

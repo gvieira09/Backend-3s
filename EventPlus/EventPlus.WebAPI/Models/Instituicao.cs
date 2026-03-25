@@ -1,0 +1,31 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace EventPlus.WebAPI.Models;
+
+[Table("Instituicao")]
+[Index("Cnpj", Name = "UQ__Institui__AA57D6B42095456E", IsUnique = true)]
+public partial class Instituicao
+{
+    [Key]
+    public Guid IdInstituicao { get; set; }
+
+    [StringLength(150)]
+    public string NomeFantasia { get; set; } = null!;
+
+    [Column("CNPJ")]
+    [StringLength(14)]
+    [Unicode(false)]
+    public string Cnpj { get; set; } = null!;
+
+    [StringLength(200)]
+    public string Endereco { get; set; } = null!;
+
+    [JsonIgnore]
+    [InverseProperty("IdInstituicaoNavigation")]
+    public virtual ICollection<Evento> Eventos { get; set; } = new List<Evento>();
+}

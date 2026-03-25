@@ -1,0 +1,6 @@
+[Cc]ache/
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+.vs/
